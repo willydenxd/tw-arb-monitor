@@ -1,0 +1,10 @@
+.env
+.env.*
+config.json
+log/
+*.log
+__pycache__/
+*.pyc
+data/
+inav_live/
+fut_l2_raw/

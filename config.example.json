@@ -1,0 +1,108 @@
+{
+ "tg": {
+  "chat_id": "YOUR_CHAT_ID",
+  "thread_id": null,
+  "enabled": false
+ },
+ "fut": {
+  "roots": [
+   "TXF",
+   "MXF",
+   "TMF"
+  ],
+  "mult": {
+   "TXF": 200,
+   "MXF": 50,
+   "TMF": 10
+  },
+  "fee_twd": {
+   "TXF": 50,
+   "MXF": 25,
+   "TMF": 12
+  },
+  "tax": 2e-05,
+  "months": 2,
+  "min_net_pts": 5,
+  "realert_s": 120,
+  "persist_s": 1.0
+ },
+ "opt": {
+  "fee_twd": 25,
+  "tax": 0.001,
+  "floor_buffer_pct": 0.05,
+  "night_buffer_pct": 0.3,
+  "settle_round_pts": 2,
+  "strike_window_pts": 1500,
+  "max_subs": 165,
+  "min_net_pts": 1.0,
+  "rebalance_s": 60,
+  "realert_s": 180,
+  "persist_s": 2.0
+ },
+ "etf": {
+  "codes": {
+   "0050": [
+    1,
+    "TW50"
+   ],
+   "006208": [
+    1,
+    "TW50"
+   ],
+   "00631L": [
+    2,
+    "TW50"
+   ],
+   "00632R": [
+    -1,
+    "TW50"
+   ],
+   "00675L": [
+    2,
+    "TAIEX"
+   ],
+   "00663L": [
+    2,
+    "TAIEX"
+   ],
+   "00685L": [
+    2,
+    "TAIEX"
+   ]
+  },
+  "pairs": [
+   [
+    "00631L",
+    "0050"
+   ],
+   [
+    "00631L",
+    "006208"
+   ],
+   [
+    "00675L",
+    "00631L"
+   ],
+   [
+    "00685L",
+    "00675L"
+   ],
+   [
+    "00663L",
+    "00675L"
+   ]
+  ],
+  "fee_pct": 0.1425,
+  "fee_discount": 0.28,
+  "tax_pct": 0.1,
+  "prem_alert_pct": 1.0,
+  "vs_fut_alert_pct": {
+   "TAIEX": 1.0,
+   "TW50": 1.5
+  },
+  "pair_alert_pct": 1.0,
+  "inav_poll_s": 15,
+  "realert_s": 180,
+  "persist_s": 5.0
+ }
+}
